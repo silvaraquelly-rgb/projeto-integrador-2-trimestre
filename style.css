@@ -149,3 +149,149 @@ body {
         margin-bottom: 10px;
     }
 }
+/* Configurações Gerais da Seção */
+.experimento-robotica {
+    background-color: #f8fafc;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+}
+
+.container-robotica {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Tags e Títulos */
+.tag-disciplina {
+    background-color: #0ea5e9;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.conteudo-experimento h2 {
+    font-size: 2.5rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.descricao-principal {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+/* Detalhes Técnicos */
+.detalhes-tecnicos h3 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.detalhes-tecnicos p {
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Caixa de Componentes */
+.componentes-box {
+    background-color: #ffffff;
+    border-left: 4px solid #0ea5e9;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.componentes-box h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.lista-componentes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.lista-componentes li {
+    font-size: 0.95rem;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Coluna de Mídia (Card da Imagem) */
+.midia-experimento {
+    display: flex;
+    justify-content: center;
+}
+
+.card-esquematico {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card-esquematico:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-projeto {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    background-color: #e2e8f0; /* Placeholder caso a imagem demore a carregar */
+    min-height: 300px;
+}
+
+.legenda-midia {
+    padding: 15px;
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsividade (Para Celulares e Tablets) */
+@media (max-width: 968px) {
+    .container-robotica {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .conteudo-experimento h2 {
+        font-size: 2rem;
+    }
+
+    .lista-componentes {
+        grid-template-columns: 1fr;
+    }
+    
+    .midia-experimento {
+        order: -1; /* Joga a imagem para o topo no celular, melhorando a leitura */
+    }
+}
